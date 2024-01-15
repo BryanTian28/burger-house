@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="/assets/img/burger1.png" />
+
+		<!-- *Styling -->
+		<link rel="stylesheet" href="/styles/navStyles.css" />
+		<link rel="stylesheet" href="/styles/bannerStyles.css" />
+		<link rel="stylesheet" href="/styles/menuBannerStyles.css" />
+		<link rel="stylesheet" href="/styles/menuStyles.css" />
+		<link rel="stylesheet" href="/styles/modalStyles.css" />
+		<title>Burger House</title>
+	</head>
+
+	<body>
+		<!-- *Navbar -->
+		<header>
+			<div class="container">
+				<img id="logo" src="/assets/img/logo.png" />
+				<div class="header">
+					<div class="desktop-only">
+						<img src="/assets/img/delivery-icon.png" />
+						<h5>Express Delivery +1 234 567 890</h5>
+					</div>
+					<nav>
+						<ul class="nav-links" id="navLinks">
+							<li
+								id="close-btn"
+								onclick="toggleNav()"
+								style="cursor: pointer; font-size: large"
+							>
+								&#x2716;
+							</li>
+							<li>Home</li>
+							<li>Menu</li>
+							<li>Our Story</li>
+							<li>Contact Us</li>
+							<li class="cart-container" onclick="showModal()">
+								<img
+									src="/assets/img/cart.png"
+									id="cart-icon"
+								/>
+							</li>
+						</ul>
+						<div class="burger-menu" onclick="toggleNav()">
+							<img src="/assets/img/menu-mobile.png" />
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- *Banner -->
+		<section class="banner-section">
+			<div class="banner-container">
+				<div class="banner-text">
+					<img src="/assets/img/main-subtitle.png" />
+					<h1>BURGER</h1>
+					<h3>WEEK</h3>
+				</div>
+				<div class="banner-image">
+					<img src="/assets/img/main-burger.png" alt="Burger Image" />
+				</div>
+			</div>
+		</section>
+
+		<!-- *Menu Banner -->
+		<section class="menu-banner">
+			<div class="mb-container">
+				<div class="box-mb">
+					<img src="/assets/img/left-banner.png" alt="Image A" />
+				</div>
+				<div class="box-mb-2">
+					<img src="/assets/img/right-bannertop.png" alt="Image B" />
+					<img
+						src="/assets/img/right-bannerbottom.png"
+						alt="Image C"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<!-- *Menu Content -->
+		<section class="menu-content">
+			<div class="menu-container">
+				<!-- *Slogan and Desc -->
+				<div class="description">
+					<div class="slogan">
+						<p>ALWAYS TASTY BURGER</p>
+					</div>
+					<div class="desc-content">
+						<h1>CHOOSE & ENJOY</h1>
+						<h6>
+							Lorem ipsum dolor sit amet consectetur, adipisicing
+							elit. Neque quia in nulla, natus id deleniti dolore
+							excepturi maiores ipsum voluptatem, quis quam
+							voluptates ea tenetur reiciendis, distinctio autem
+							laborum sit.
+						</h6>
+					</div>
+				</div>
+
+				<!-- *Menu -->
+				<div class="menu">
+					<div class="card">
+						<img src="/assets/img/burger2.png" alt="Image 1" />
+						<h3>LOREM IPSUM DOLOR</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing
+							elit. Neque quia in nulla
+						</p>
+						<button onclick="addToCart('Burger 1')">
+							ADD TO CART
+						</button>
+					</div>
+					<div class="card">
+						<img src="/assets/img/burger1.png" alt="Image 2" />
+						<h3>LOREM IPSUM DOLOR</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing
+							elit. Neque quia in nulla
+						</p>
+						<button onclick="addToCart('Burger 2')">
+							ADD TO CART
+						</button>
+					</div>
+					<div class="card">
+						<img src="/assets/img/burger2.png" alt="Image 3" />
+						<h3>LOREM IPSUM DOLOR</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing
+							elit. Neque quia in nulla
+						</p>
+						<button onclick="addToCart('Burger 3')">
+							ADD TO CART
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- *Modal -->
+		<div class="modal" id="myModal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p>SHOPPING CART</p>
+					<p id="close-btn-modal" onclick="closeModal()">&#x2716;</p>
+				</div>
+				<hr />
+				<div id="modalContent"></div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

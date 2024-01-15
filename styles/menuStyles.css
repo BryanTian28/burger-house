@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'bebasreg';
+  src: url('/assets/fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/bebasneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'alfareg';
+  src: url('/assets/fonts/alfaslabone-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/alfaslabone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-size: 8px;
+}
+
+.menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.menu-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slogan{
+  background-color: #FFC74C;
+  color: #6E441B;
+  display: flex;
+  max-width: 60%;
+  text-wrap: nowrap;
+  padding: 0 2% ;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan p{
+  font-family: 'bebasreg';
+  font-size: 2rem; 
+  margin: 1% 0;
+}
+
+.desc-content{
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #6E441B;
+  margin-top: 2%;
+}
+
+.desc-content h1{
+  font-family: 'alfareg';
+  font-size: 1.8em;
+  margin:  0;
+}
+
+.desc-content h6{
+  max-width: 80%;
+  font-family: 'Arial';
+  font-size: 0.7em;
+  font-weight: 100;
+  margin: 1% 0;
+}
+
+.menu {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.card img {
+  width: 70%;
+  height: auto;
+}
+
+.card h3{
+  font-family: 'bebasreg';
+  font-size: 3.5em;
+  letter-spacing: 1px;
+  color: #6E441B;
+  margin: 2% 0;
+}
+
+.card p{
+  font-family: 'bebasreg';
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  color: #6E441B;
+  margin: 2% 0;
+}
+
+.card button{
+  cursor: pointer;
+  background-color: rgb(206, 12, 12);
+  font-family: 'alfareg';
+  color: white;
+  border: none;
+  padding: 3% 8%;
+  margin-top: 2%;
+}
+
+.card button:active{
+  transform: translateY(3px);
+}
+
+@media only screen and (max-width: 768px) {
+
+  .slogan p{
+    font-family: 'bebasreg';
+    font-size: 1rem; 
+    margin: 2% 3%; 
+  }
+
+  .desc-content h1{
+    font-family: 'alfareg';
+    font-size: 0.8em;
+    margin:  0;
+  }
+  
+  .desc-content h6{
+    font-size: 0.4em;
+    margin: 1% 0;
+  }
+
+  .menu{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .card {
+    width: 100%;;
+  }
+  .card p{
+    font-size: 1.5em;
+  }
+}
